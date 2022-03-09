@@ -1,0 +1,30 @@
+
+.job-list{
+    margin:20px; 
+}
+.table-container{
+    border:2px solid grey;
+    overflow-x: auto;
+}
+.filter-company{
+    width: 95%;
+}   
+.filter-category,.filter-company{
+    flex:1;
+}
+.search-button{
+    float:right;
+}
+.link-button{
+    padding-left:0;
+    padding-right:15px;
+}
+.search-text{
+    font-size: 2rem;
+}
+.form-container{
+    padding:5px;
+}
+.search-form-row{
+    margin-bottom: 10px;
+}

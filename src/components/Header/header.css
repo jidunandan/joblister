@@ -1,0 +1,16 @@
+.header{
+    background-color: #171717 !important;
+    padding-left: 0 !important;
+    height:70px !important ;
+  }
+  .logo{
+    height:100%;
+    width: 100px;
+    float:left; 
+    margin-right: 1rem;
+  }
+  .title{
+    float:left; 
+    font-size: 3rem;
+    color:white;
+  }
