@@ -12,14 +12,14 @@ interface Props {
     clearFilter: Function,
     handleSearch: Function,
     categories: Array<any>,
-    categoryFilters: Array<any>,
-    setCategoryFilters: Function
+    categoryFilter: Array<any>,
+    setCategoryFilter: Function
 }
 const SearchandFilter = (props: Props) => {
     const { searchTerm, setSearchTerm, filterCompany,
         setFilterCompany, companyList, clearFilter,
-        handleSearch, categories, categoryFilters,
-        setCategoryFilters } = props;
+        handleSearch, categories, categoryFilter,
+        setCategoryFilter } = props;
     return (
         <div>
             <div className="search-text">
@@ -56,13 +56,14 @@ const SearchandFilter = (props: Props) => {
                         })}
                     </Select>
                 </Col>
+                
                 <Select
-                    mode="multiple"
+                    
                     allowClear
                     className='filter-category'
                     placeholder="Filter by category"
-                    onChange={(value) => { setCategoryFilters(value) }}
-                    value={categoryFilters}
+                    onChange={(value) => { setCategoryFilter(value) }}
+                    value={categoryFilter}
                     maxTagCount='responsive'
                 >
                     {categories.map((item: any, index: any) => {
@@ -79,12 +80,7 @@ const SearchandFilter = (props: Props) => {
                         Clear All Filters
                     </Button>
 
-                    <Button
-                        className='link-button'
-                        type="link"
-                        onClick={() => clearFilter(true)} >
-                        Reload List
-                    </Button>
+                   
 
                 </Col>
                 <Col span={12}>
